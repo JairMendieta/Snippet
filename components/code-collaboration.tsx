@@ -42,19 +42,26 @@ export function CodeCollaboration({ snippetId, titulo, codigo }: CodeCollaborati
   useEffect(() => {
     // Simular colaboradores activos
     setColaboradores([
-      {
+       {
         id: "1",
-        nombre: "Ana García",
-        avatar: "AG",
+        nombre: "Luis Garcia",
+        avatar: "LG",
         activo: true,
         ultimaActividad: "Hace 2 min",
       },
       {
         id: "2",
-        nombre: "Carlos López",
-        avatar: "CL",
+        nombre: "Jair Mendieta",
+        avatar: "JM",
         activo: false,
         ultimaActividad: "Hace 15 min",
+      },
+      {
+        id: "3",
+        nombre: "Luis Delegado",
+        avatar: "LD",
+        activo: false,
+        ultimaActividad: "Hace 1 hora",
       },
     ])
 
@@ -62,16 +69,22 @@ export function CodeCollaboration({ snippetId, titulo, codigo }: CodeCollaborati
     setComentarios([
       {
         id: "1",
-        autor: "Ana García",
+        autor: "Luis Garcia",
         mensaje: "Esta función se podría optimizar usando map en lugar de forEach",
         linea: 5,
         fecha: "Hace 10 min",
       },
       {
         id: "2",
-        autor: "Carlos López",
+        autor: "Jair Mendieta",
         mensaje: "Excelente implementación, muy limpia",
         fecha: "Hace 1 hora",
+      },
+      {
+        id: "3",
+        autor: "Luis Delegado",
+        mensaje: "Excelente implementación, muy limpia",
+        fecha: "Hace 1 min",
       },
     ])
   }, [])
